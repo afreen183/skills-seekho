@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skills Seekho - Free Digital Skills Guide</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; background: #0f0c29; color: white; }
+.hero { background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); padding: 40px 20px; text-align: center; }
+.hero h1 { font-size: 28px; color: #FFD700; margin-bottom: 15px; }
+.hero p { font-size: 16px; color: #ccc; margin-bottom: 25px; }
+.form-box { background: white; color: #333; border-radius: 15px; padding: 25px; max-width: 400px; margin: 0 auto; }
+.form-box h2 { color: #302b63; margin-bottom: 20px; font-size: 20px; }
+input { width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ddd; border-radius: 8px; font-size: 15px; }
+button { width: 100%; padding: 14px; background: #FFD700; color: #333; font-size: 17px; font-weight: bold; border: none; border-radius: 8px; cursor: pointer; }
+</style>
+</head>
+<body>
+<div class="hero">
+<h1>🎓 Digital Skills Seekho — Ghar Se!</h1>
+<p>Free guide lo aur apna career shuru karo 👇</p>
+<div class="form-box">
+<h2>Free Guide Lene Ke Liye Fill Karo</h2>
+<input type="text" id="name" placeholder="Tumhara Naam" />
+<input type="text" id="whatsapp" placeholder="WhatsApp Number" />
+<input type="email" id="email" placeholder="Email Address" />
+<button onclick="submitForm()">Free Guide Lena Hai! 🚀</button>
+</div>
+</div>
+<script>
+function submitForm() {
+  var name = document.getElementById('name').value;
+  var whatsapp = document.getElementById('whatsapp').value;
+  var email = document.getElementById('email').value;
+  if(name && whatsapp && email) {
+    window.location.href = "https://successguruu.com/auth/signup?ref_code=PJPVPJ63KK&package=basic-package";
+  } else {
+    alert("Sab fields bharo pehle!");
+  }
+}
+</script>
+</body>
+</html>
