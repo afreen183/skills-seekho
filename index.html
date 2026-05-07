@@ -29,11 +29,19 @@ button { width: 100%; padding: 14px; background: #FFD700; color: #333; font-size
 </div>
 </div>
 <script>
-function submitForm() {
+async function submitForm() {
   var name = document.getElementById('name').value;
   var whatsapp = document.getElementById('whatsapp').value;
   var email = document.getElementById('email').value;
+
   if(name && whatsapp && email) {
+    try {
+      await fetch("https://formspree.io/f/xqendpkd", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name: name, whatsapp: whatsapp, email: email })
+      });
+    } catch(e) {}
     window.location.href = "https://successguruu.com/auth/signup?ref_code=PJPVPJ63KK&package=basic-package";
   } else {
     alert("Sab fields bharo pehle!");
